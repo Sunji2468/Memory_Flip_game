@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'https://media.istockphoto.com/id/1221133425/photo/giant-panda-bear-eating-bamboo.jpg?s=612x612&w=0&k=20&c=0stdf5jkOYOvbe4wmfLHLmG02cip-gDAOipSmdW-fg0=',
         'https://illustcute.com/photo/707.png?20240818'
     ];
-
+    
     function initGame() {
         moves = 0;
         matches = 0;
