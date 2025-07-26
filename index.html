@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="bamboo-decoration bamboo-1"></div>
+    <div class="bamboo-decoration bamboo-2"></div>
+    <div class="bamboo-decoration bamboo-3"></div>
+    <div class="bamboo-decoration bamboo-4"></div>
+
+    <h1>Memory Game 🐼</h1>
+    <p class="subtitle">Match the pandas to win!</p>
+
+    <div class="game-container">
+        <div class="score-board">
+            <div class="score-item">
+                <span>Moves: </span>
+                <span id="moves">0</span>
+            </div>
+            <div class="score-item">
+                <span>Matches: </span>
+                <span id="matches">0</span>
+            </div>
+            <div class="score-item">
+                <span>Time: </span>
+                <span id="timer">0:00</span>
+            </div>
+        </div>
+
+        <div class="game-grid" id="gameGrid">
+        </div>
+
+        <div class="game-controls">
+            <button id="newGameBtn" class="btn">New Game</button>
+            <button id="resetBtn" class="btn">Reset</button>
+        </div>
+
+        <div id="winMessage" class="win-message hidden">
+            <h2> Congratulations! 🎉</h2>
+            <p>You matched all the pandas!</p>
+            <p>Time: <span id="finalTime"></span></p>
+            <p>Moves: <span id="finalMoves"></span></p>
+        </div>
+    </div>
+</body>
+</html>
